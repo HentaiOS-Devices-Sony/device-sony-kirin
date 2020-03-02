@@ -15,9 +15,9 @@
 include device/sony/ganges/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := unknown
-ifneq (,$(filter %i3113,$(TARGET_PRODUCT)))
+ifneq (,$(filter %hentai_kirin_RoW,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := I3113
-else ifneq (,$(filter %i4113,$(TARGET_PRODUCT)))
+else ifneq (,$(filter %hentai_kirin_DSDS,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := I4113
 else
 TARGET_BOOTLOADER_BOARD_NAME := I3113
@@ -28,6 +28,16 @@ endif
 PRODUCT_PLATFORM := ganges
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=kirin
+
+#Use Clang instead of Gcc 4.9
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_CLANG_VERSION := r353983c
+
+#kernel
+BOARD_KERNEL_SEPARATED_DTBO := true
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_SOURCE := kernel/sony/msm-4.14/kernel
+TARGET_NEEDS_DTBOIMAGE := false
 
 # Partition information
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
