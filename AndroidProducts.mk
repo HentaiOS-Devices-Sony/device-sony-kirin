@@ -12,11 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_i3113.mk \
-                     $(LOCAL_DIR)/aosp_i4113.mk
-
+PRODUCT_MAKEFILES := \
+	$(LOCAL_DIR)/hentai_kirin_RoW.mk \
+	$(LOCAL_DIR)/hentai_kirin_DSDS.mk
+  
 COMMON_LUNCH_CHOICES += \
-    aosp_i3113-eng \
-    aosp_i3113-userdebug \
-    aosp_i4113-eng \
-    aosp_i4113-userdebug
+    hentai_kirin_RoW-eng \
+    hentai_kirin_RoW-userdebug \
+    hentai_kirin_RoW-user \
+    hentai_kirin_DSDS-eng \
+    hentai_kirin_DSDS-userdebug \
+    hentai_kirin_DSDS-user
