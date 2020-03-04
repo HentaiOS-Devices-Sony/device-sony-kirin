@@ -14,12 +14,19 @@
 
 PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/hentai_kirin_RoW.mk \
-	$(LOCAL_DIR)/hentai_kirin_DSDS.mk
-  
+	$(LOCAL_DIR)/hentai_kirin_DSDS.mk \
+	$(LOCAL_DIR)/hentai_kirin_RoW_Go.mk \
+	$(LOCAL_DIR)/hentai_kirin_DSDS_Go.mk \
 COMMON_LUNCH_CHOICES += \
     hentai_kirin_RoW-eng \
     hentai_kirin_RoW-userdebug \
     hentai_kirin_RoW-user \
     hentai_kirin_DSDS-eng \
     hentai_kirin_DSDS-userdebug \
-    hentai_kirin_DSDS-user
+    hentai_kirin_DSDS-user \
+    hentai_kirin_RoW_Go-eng \
+    hentai_kirin_RoW_Go-userdebug \
+    hentai_kirin_RoW_Go-user \
+    hentai_kirin_DSDS_Go-eng \
+    hentai_kirin_DSDS_Go-userdebug \
+    hentai_kirin_DSDS_Go-user \
